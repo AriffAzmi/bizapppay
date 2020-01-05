@@ -1,6 +1,6 @@
 {
     "name": "ariffazmi/bizapppay",
-    "description": "PHP Library for working with BizzAppPay API",
+    "description": "PHP Library for working with BizAppPay API",
     "keywords": ["bizapppay", "malaysia", "api"],
     "homepage": "https://github.com/ariffazmi/bizapppay",
     "license": "MIT",
@@ -11,8 +11,8 @@
         }
     ],
     "autoload": {
-        "psr-0" : {
-            "BizAppPay" : "src"
+        "psr-4" : {
+            "BizAppPay\\" : "src/"
         }
     },
     "minimum-stability": "dev"
