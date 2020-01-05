@@ -72,8 +72,8 @@ class BizappPayAPI
 	{
 		$params = [
 			'apiKey' => $this->getApiKey(),
-			'categoryName' => $this->getCategoryCode(),
-			'categoryDescription' => $this->getBillName()
+			'categoryName' => $this->getCategoryName(),
+			'categoryDescription' => $this->getCategoryDescription()
 		];
 
 		$curl = curl_init();
