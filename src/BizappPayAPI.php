@@ -68,6 +68,25 @@ class BizappPayAPI
 		return $result;
 	}
 
+	public function createNewCategory()
+	{
+		$params = [
+			'apiKey' => $this->getApiKey(),
+			'categoryName' => $this->getCategoryCode(),
+			'categoryDescription' => $this->getBillName()
+		];
+
+		$curl = curl_init();
+		curl_setopt($curl, CURLOPT_POST, 1);
+		curl_setopt($curl, CURLOPT_URL, $this->getApiEndpoint()."createNewCategory");
+		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($curl, CURLOPT_POSTFIELDS, $params);
+		$result = json_decode(curl_exec($curl));
+		curl_close($curl);
+
+		return $result;
+	}
+
 	public function getApiEndpoint()
 	{
 		if ($this->getUseSandbox()) {
