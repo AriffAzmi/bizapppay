@@ -1,8 +1,8 @@
 {
-    "name": "ariffazmi/bizzapppay",
+    "name": "ariffazmi/bizapppay",
     "description": "PHP Library for working with BizzAppPay API",
     "keywords": ["bizapppay", "malaysia", "api"],
-    "homepage": "https://github.com/ariffazmi/bizzapppay",
+    "homepage": "https://github.com/ariffazmi/bizapppay",
     "license": "MIT",
     "authors": [
         {
